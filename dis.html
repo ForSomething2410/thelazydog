@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Array Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color:black;
+        }
+        .img {
+            width:60%;
+            margin:7px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h1{
+        color:white;
+        text-align:center;
+        }
+        h2{
+        color:red;
+        }
+        .img,h1,h2{
+        margin:2px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    
+    <img class="img" src="https://forsomething2410.github.io/thelazydog/images/slackZazu.png"> 
+    
+    </center>
+    <h1 id="he"> sjs </h1>
+    <h2 id="hee">fv</h2>
+    <hr>
+    <ul id="data-list"></ul>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const dataParam = urlParams.get("data");
+        const dataArray = JSON.parse(decodeURIComponent(dataParam));
+       
+        const dataList = document.getElementById('data-list');
+        dataArray.forEach((item, index) => {
+            if(index==0){
+            document.getElementById("he").innerHTML=`${item}'s The Lazy Dog`;
+            }else if(index==1){
+            document.getElementById("hee").innerHTML=`${item} Details`;
+            }else{
+            const listItem = document.createElement('li');
+            listItem.textContent = "Sl.no "+index+" "+item;
+            dataList.appendChild(listItem);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<html>
+
+<head>
+<title> LazydoG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+background-color:black;
+width:97%;
+
+color:white;
+}
+.gpar{
+width:100%;
+display:flex;
+height:100%;
+flex-wrap:wrap;
+justify-content:space-between;
+gap:10px;
+flex-grow:2;
+}
+
+
+
+.pare{
+background-color:transparent;
+width:75%;
+
+display:grid;
+grid-template-columns:1fr;
+grid-gap:40px;
+}
+
+.par2{
+width:20%;
+background-color:black;
+margin:0px;
+color:white;
+
+}
+.par2 div{
+position:sticky;
+width:100%;
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+align-items:center;
+top:10%;
+color:red;
+z-index:10;
+}
+.child{
+background-color:#e5e5e5;
+width:100%;
+height:auto;
+display:flex;
+flex-direction:column;
+
+padding:15px 5px 4px 5px;
+border:2px solid #848484;
+border-radius:7px;
+color:black;
+border-radius: 10px;
+
+
+}
+
+.child > img{
+border-radius:7px;
+width:100%;
+height:auto;
+margin:0px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),  0 1px 3px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15),0 0 40px rgba(255, 255, 255, 0.1);
+background-color:black;
+
+}
+
+.zazuData{
+width:100%;
+padding:5px;
+margin:0px;
+text-align:center;
+border-bottom:2px solid black;
+border-radius:30px;
+}
+
+.zazuData:hover{
+color:brown;
+font-weight:bold;
+}
+.chhed{
+font-size:1.2rem;
+padding:5px;
+}
+
+a{
+color:white;
+text-decoration:none;
+font-size:1.2rem;
+}
+
+.himg{
+width:40%;
+}
+.zh{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:8px;
+margin:3px;
+background-color:black;
+border-bottom:1.5px solid white;
+
+}
+i{
+color:white;
+font-size:1.5rem;
+}
+
+.chhh{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+.chhh i{
+font-size:1.2rem;
+color:black;
+
+}
+.zaData{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin:16px 0px 0px 0px;
+padding:0px;
+width:100%;
+}
+
+.zaData .zazuData:last-child{
+border:none;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div class="zh">
+<i id="" class="fa-solid fa-user"></i>
+<img class="himg" src="https://forsomething2410.github.io/thelazydog/images/thelazydog.png">
+<i class="fas fa-sign-out"></i>
+</div>
+
+<br>
+
+<div class="gpar">
+<div class="pare">
+   <div class="child" id="A"> 
+      <div class="chhh"> 
+          <font class="chhed"> Aadhar Card</font> 
+          <i class="fa-regular fa-floppy-disk"></i> 
+          <i onclick="shareD('Aadhar Card','AadharData')" class="fa-regular fa-share-from-square"></i> 
+       </div>
+       <img class="lo" src="https://forsomething2410.github.io/thelazydog/images/P_Aadhar.png">
+       <div class="zaData AadharData"> 
+          <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+          <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+          <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+       </div>
+    </div>
+    
+    <div class="child" id="B"> 
+        <div class="chhh"> 
+         <font class="chhed"> Bank Book</font> 
+         <i class="fa-regular fa-floppy-disk"></i> 
+         <i onclick="shareD('Bank Pass Book','BankBook')" class="fa-regular fa-share-from-square"></i> 
+        </div>
+        <img class="lo" src="https://forsomething2410.github.io/thelazydog/images/P_BankPassBook.jpg">
+         <div class="zaData BankBook"> 
+           <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+           <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+           <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+         </div>
+    </div>
+    
+    <div class="child"> 
+    <div class="chhh"> 
+    <font class="chhed"> Bills </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Bills','Bills')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img class="lo" src="https://forsomething2410.github.io/thelazydog/images/P_Bills.jpg">
+    <div class="zaData Bills"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child"> 
+    <div class="chhh"> 
+    <font class="chhed"> Birth Certificate</font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Birth Certificate Card','Birth')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_BirthC.png">
+    <div class="zaData Birth"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Blood Group</font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Blood Group Certificate','Blood')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_BloodGroupC.jpeg">
+    <div class="zaData Blood"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="C"> 
+    <div class="chhh"> 
+    <font class="chhed"> Caste Certificate </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Caste Certificate','Caste')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_CasteC.jpg">
+    <div class="zaData Caste"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="D"> 
+    <div class="chhh"> 
+    <font class="chhed"> Death CRT </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Death Certificate','DeathC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/DeathC.png">
+    <div class="zaData DeathC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Diploma Certificate</font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Diploma Certificate','DipC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_DiplomaC.jpg">
+    <div class="zaData DipC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Dip Provisional</font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Diploma Provisional Certificate','DipProvC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_DiplomaProvC.jpg">
+    <div class="zaData DipProvC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Dip Sem MC </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Diploma Semster Marks Card','DipSMC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_DiplomaSemMC.png">
+    <div class="zaData DipSMC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="I"> 
+    <div class="chhh"> 
+    <font class="chhed"> Income Certificate </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Income Certificate','INC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_IncomC.jpeg">
+    <div class="zaData INC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="K"> 
+    <div class="chhh"> 
+    <font class="chhed"> KEA </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('KEA ','KEA')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_KEA.jpeg">
+    <div class="zaData KEA"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="L"> 
+    <div class="chhh"> 
+    <font class="chhed"> Land Records </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Land Records','LNDR')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_LandRecord.jpeg">
+    <div class="zaData LNDR"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Lens Kart</font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Lens Kart','LNSKRT')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_LensKartData.jpeg">
+    <div class="zaData LNSKRT"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="M"> 
+    <div class="chhh"> 
+    <font class="chhed"> Medical Reports </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Medical Report Certificate','MDLR')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_MedicalReport.png">
+    <div class="zaData MDLR"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="P"> 
+    <div class="chhh"> 
+    <font class="chhed"> Pan Card </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Pan Card Certificate','PANC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_PanCard.png">
+    <div class="zaData PANC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Prathiba Karanji </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Prathiba Karanji Certificate','PRTKARC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_PrathibaKaranji.jpeg">
+    <div class="zaData PRTKARC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="R"> 
+    <div class="chhh"> 
+    <font class="chhed"> Ration Card </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Ration Card Certificate','RATIONC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_RationCard.jpg">
+    <div class="zaData RATIONC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Results </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Results Certificate','result')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_Results.png">
+    <div class="zaData result"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="S"> 
+    <div class="chhh"> 
+    <font class="chhed"> Scholarship Data </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Scholarship','SCHR')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_ScholarshipData.jpeg">
+    <div class="zaData SCHR"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> SSLC MC </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('SSLC Certificate','SSLC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_SslcMC.jpg">
+    <div class="zaData SSLC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="T"> 
+    <div class="chhh"> 
+    <font class="chhed"> TC </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Transfer Certificate','TCC')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_TC.jpeg">
+    <div class="zaData TCC"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="U"> 
+    <div class="chhh"> 
+    <font class="chhed"> UKG </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('UKG','ukg')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_UkgData.png">
+    <div class="zaData ukg"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" id="V"> 
+    <div class="chhh"> 
+    <font class="chhed"> Vehicle Data </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Vehicle','VDD')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_VehicleData.jpg">
+    <div class="zaData VDD"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+    
+    <div class="child" > 
+    <div class="chhh"> 
+    <font class="chhed"> Voter Card </font> 
+    <i class="fa-regular fa-floppy-disk"></i> 
+    <i onclick="shareD('Vite Certificate','Vote')" class="fa-regular fa-share-from-square"></i> 
+    </div>
+    <img src="https://forsomething2410.github.io/thelazydog/images/P_VoteC.png">
+    <div class="zaData Vote"> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+    </div>
+    </div>
+       
+   
+   
+   </div>
+
+<div class="par2">
+<div>
+   <a href="#A">A</a>  
+   <a href="#B">B</a>  
+   <a href="#C">C</a>  
+   <a href="#D">D</a>  
+   <a href="#E">E</a>  
+   <a href="#F">F</a>  
+   <a href="#G">G</a>  
+   <a href="#H">H</a>  
+   <a href="#I">I</a>  
+   <a href="#J">J</a>  
+   <a href="#K">K</a>  
+   <a href="#L">L</a>  
+   <a href="#M">M</a>  
+   <a href="#N">N</a>  
+   <a href="#O">O</a>  
+   <a href="#P">P</a>  
+   <a href="#Q">Q</a>  
+   <a href="#R">R</a>  
+   <a href="#S">S</a>  
+   <a href="#T">T</a>  
+   <a href="#U">U</a>  
+   <a href="#V">V</a>  
+   <a href="#W">W</a>  
+   <a href="#X">X</a>  
+   <a href="#Y">Y</a>  
+   <a href="#Z">Z</a>
+   </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+
+async function shareD(n,d){
+
+let xxx=[n];
+
+let xx= document.getElementsByClassName(d);
+Array.from(xx).forEach((x,y)=>{
+Array.from(x.children).forEach((t)=>{
+
+xxx.push(t.innerHTML);
+
+
+});
+});
+
+let imgU=xx[0].parentNode.children[1].src;
+
+let fet= await fetch(imgU);
+
+let blo= await fet.blob();
+
+let xxc= new File([blo],"image.jpg",{type:blo.type});
+let ccx=encodeURIComponent(JSON.stringify(xxx));
+let jso= `https://forsomething2410.github.io/kanakkuvallakkuda/dis?data=${ccx}`;
+navigator.share({
+url:jso,
+files:[xxc]
+});
+
+}
+
+function zazuWTC(x){
+navigator.clipboard.writeText(x.textContent);
+alert("Copied To ClipBoard sucessfully");
+}
+
+</script>
+</body>
+
+</html>
