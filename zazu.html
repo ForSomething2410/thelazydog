@@ -562,7 +562,7 @@ border:none;
 
 async function shareD(n,d){
 
-let xxx=[n];
+let xxx=["NKN",n];
 
 let xx= document.getElementsByClassName(d);
 Array.from(xx).forEach((x,y)=>{
@@ -582,7 +582,7 @@ let blo= await fet.blob();
 
 let xxc= new File([blo],"image.jpg",{type:blo.type});
 let ccx=encodeURIComponent(JSON.stringify(xxx));
-let jso= `https://forsomething2410.github.io/kanakkuvallakkuda/dis?data=${ccx}`;
+let jso= `https://forsomething2410.github.io/thelazydog/dis?data=${ccx}`;
 navigator.share({
 url:jso,
 files:[xxc]
