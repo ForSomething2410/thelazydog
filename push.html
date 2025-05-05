@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Push.js Request and Display</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.min.js"></script>
+</head>
+<body>
+  <h2>Push.js: Request Permission and Show Notification</h2>
+  <button onclick="requestAndShow()">Request and Show</button>
+
+  <script>
+    function requestAndShow() {
+      if (Push.Permission.has()) {
+        showNotification();
+      } else {
+        Push.Permission.request(
+          () => showNotification(),
+          () => alert("Permission denied.")
+        );
+      }
+    }
+
+    function showNotification() {
+      Push.create("Welcome!", {
+        body: "This is your Push.js notification.",
+        icon: "https://cdn-icons-png.flaticon.com/512/190/190411.png",
+        timeout: 5000,
+        onClick: function () {
+          window.focus();
+          this.close();
+        }
+      });
+    }
+  </script>
+</body>
+</html>
